@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking blog</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header class="header"> 
+        <div class="container">
+            <div class="header__top header__item">
+                <a class="logo" href="index.html">
+                    <img class="logo__img" src="img/logo.png" alt="logo">
+                </a>
+                <div class="header__top-right">
+                    <nav class="menu">
+                        <div class="ham" >  
+                            <span class="bar1"></span>  
+                            <span class="bar2"></span>  
+                            <span class="bar3"></span>  
+                        </div>  
+                        <div class="mobile__menu">
+                            <ul class="menu__list nav">
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="index.html">Головна</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">Контакти</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">Про нас</a>
+                                </li>
+                            </ul>
+                            <a class="button" href="#">Додати рецепт</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="header__bottom header__item">
+                <div class="search-container">
+                    <img class="search__icon" src="img/search-icon.svg" alt="search">
+                    <input class="search__input" type="text" placeholder="Пошук" name="search">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <div class="left__block">
+                    <section class="block__recipes catalog">
+                        <div class="block__recipes-header">
+                            <p class="block__recipes-title">Рецепти</p>
+                            <div class="white-ham">  
+                                <span class="white-bar1"></span>  
+                                <span class="white-bar2"></span>  
+                                <span class="white-bar3"></span>  
+                            </div>  
+                        </div>
+                        <div class="block__recipes-body">
+                            <ul class="recipes-nav nav">
+                                <li class="recipes-nav-item">
+                                    <a class="recipes-nav-link" href="#">Перші страви</a>
+                                </li>
+                                <li class="recipes-nav-item">
+                                    <a class="recipes-nav-link" href="#">Другі страви</a>
+                                </li>
+                                <li class="recipes-nav-item">
+                                    <a class="recipes-nav-link" href="#">Десерти</a>
+                                </li>
+                                <li class="recipes-nav-item">
+                                    <a class="recipes-nav-link" href="#">Закуски</a>
+                                </li>
+                                <li class="recipes-nav-item">
+                                    <a class="recipes-nav-link" href="#">Консервація</a>
+                                </li>
+                                <li class="recipes-nav-item">
+                                    <a class="recipes-nav-link" href="#">Салати</a>
+                                </li>
+                                <li class="recipes-nav-item">
+                                    <a class="recipes-nav-link" href="#">Сніданки</a>
+                                </li>
+                                <li class="recipes-nav-item">
+                                    <a class="recipes-nav-link" href="#">Супи</a>
+                                </li>
+                                <li class="recipes-nav-item">
+                                    <a class="recipes-nav-link" href="#">Субпродукти</a>
+                                </li>
+                                <li class="recipes-nav-item">
+                                    <a class="recipes-nav-link" href="#">Перші страви</a>
+                                </li>
+                                <li class="recipes-nav-item">
+                                    <a class="recipes-nav-link" href="#">Другі страви</a>
+                                </li>
+                                <li class="recipes-nav-item">
+                                    <a class="recipes-nav-link" href="#">Десерти</a>
+                                </li>
+                                <li class="recipes-nav-item">
+                                    <a class="recipes-nav-link" href="#">Закуски</a>
+                                </li>
+                                <li class="recipes-nav-item">
+                                    <a class="recipes-nav-link" href="#">Консервація</a>
+                                </li>
+                                <li class="recipes-nav-item">
+                                    <a class="recipes-nav-link" href="#">Салати</a>
+                                </li>
+                                <li class="recipes-nav-item">
+                                    <a class="recipes-nav-link" href="#">Сніданки</a>
+                                </li>
+                                <li class="recipes-nav-item">
+                                    <a class="recipes-nav-link" href="#">Супи</a>
+                                </li>
+                                <li class="recipes-nav-item">
+                                    <a class="recipes-nav-link" href="#">Субпродукти</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="block__recipes recomenned">
+                        <div class="block__recipes-header">Пошук по ключових словах</div>
+                        <div class="block__recipes-body">
+                            <ul class="recipes-nav nav">
+                                <li class="recipes-nav-item">
+                                    <a class="recipes-nav-link" href="#">#Першістрави</a>
+                                </li>
+                                <li class="recipes-nav-item">
+                                    <a class="recipes-nav-link" href="#">#Другістрави</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="right__block">
+                    <section class="catalog">
+                        <p class="title">Список рецептів</p>
+                        <div class="row">
+                            <div class="catalog__item">
+                                <img class="catalog__img" src="img/borsh.jpg" alt="">
+                                <a href="#">
+                                    <div class="catalog__item-bottom">Борщ по класичному рецепту</div>
+                                    <div class="overlay">
+                                        <p class="catalog__item-title">Борщ по класичному рецепту</p>
+                                        <p class="catalog__item-text">Кількість приготування - 5</p>
+                                        <p class="catalog__item-text">Час - 30 хв</p>
+                                        <p class="catalog__item-text">Рейтинг - 5.0</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="catalog__item">
+                                <img class="catalog__img" src="img/borsh.jpg" alt="">
+                                <a href="#">
+                                    <div class="catalog__item-bottom">Борщ по класичному рецепту</div>
+                                    <div class="overlay">
+                                        <p class="catalog__item-title">Борщ по класичному рецепту</p>
+                                        <p class="catalog__item-text">Кількість приготування - 5</p>
+                                        <p class="catalog__item-text">Час - 30 хв</p>
+                                        <p class="catalog__item-text">Рейтинг - 5.0</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="catalog__item">
+                                <img class="catalog__img" src="img/borsh.jpg" alt="">
+                                <a href="#">
+                                    <div class="catalog__item-bottom">Борщ по класичному рецепту</div>
+                                    <div class="overlay">
+                                        <p class="catalog__item-title">Борщ по класичному рецепту</p>
+                                        <p class="catalog__item-text">Кількість приготування - 5</p>
+                                        <p class="catalog__item-text">Час - 30 хв</p>
+                                        <p class="catalog__item-text">Рейтинг - 5.0</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="catalog__item">
+                                <img class="catalog__img" src="img/borsh.jpg" alt="">
+                                <a href="#">
+                                    <div class="catalog__item-bottom">Борщ по класичному рецепту</div>
+                                    <div class="overlay">
+                                        <p class="catalog__item-title">Борщ по класичному рецепту</p>
+                                        <p class="catalog__item-text">Кількість приготування - 5</p>
+                                        <p class="catalog__item-text">Час - 30 хв</p>
+                                        <p class="catalog__item-text">Рейтинг - 5.0</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="catalog__item">
+                                <img class="catalog__img" src="img/borsh.jpg" alt="">
+                                <a href="#">
+                                    <div class="catalog__item-bottom">Борщ по класичному рецепту</div>
+                                    <div class="overlay">
+                                        <p class="catalog__item-title">Борщ по класичному рецепту</p>
+                                        <p class="catalog__item-text">Кількість приготування - 5</p>
+                                        <p class="catalog__item-text">Час - 30 хв</p>
+                                        <p class="catalog__item-text">Рейтинг - 5.0</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="catalog__item">
+                                <img class="catalog__img" src="img/borsh.jpg" alt="">
+                                <a href="#">
+                                    <div class="catalog__item-bottom">Борщ по класичному рецепту</div>
+                                    <div class="overlay">
+                                        <p class="catalog__item-title">Борщ по класичному рецепту</p>
+                                        <p class="catalog__item-text">Кількість приготування - 5</p>
+                                        <p class="catalog__item-text">Час - 30 хв</p>
+                                        <p class="catalog__item-text">Рейтинг - 5.0</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="catalog__item">
+                                <img class="catalog__img" src="img/borsh.jpg" alt="">
+                                <a href="#">
+                                    <div class="catalog__item-bottom">Борщ по класичному рецепту</div>
+                                    <div class="overlay">
+                                        <p class="catalog__item-title">Борщ по класичному рецепту</p>
+                                        <p class="catalog__item-text">Кількість приготування - 5</p>
+                                        <p class="catalog__item-text">Час - 30 хв</p>
+                                        <p class="catalog__item-text">Рейтинг - 5.0</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="catalog__item">
+                                <img class="catalog__img" src="img/borsh.jpg" alt="">
+                                <a href="#">
+                                    <div class="catalog__item-bottom">Борщ по класичному рецепту</div>
+                                    <div class="overlay">
+                                        <p class="catalog__item-title">Борщ по класичному рецепту</p>
+                                        <p class="catalog__item-text">Кількість приготування - 5</p>
+                                        <p class="catalog__item-text">Час - 30 хв</p>
+                                        <p class="catalog__item-text">Рейтинг - 5.0</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__head">
+            <nav class="menu">
+                <ul class="menu__list nav">
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="index.html">Головна</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">Контакти</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">Про нас</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer__row-icons">
+            <a class="footer__icon" href="#">
+                <img class="social-icon" src="img/instagram.svg" alt="instagram">
+            </a>
+            <a class="footer__icon" href="#">
+                <img class="social-icon" src="img/twitter.svg" alt="twitter">
+            </a>
+            <a class="footer__icon" href="#">
+                <img class="social-icon" src="img/facebook.svg" alt="facebook">
+            </a>
+            <a class="footer__icon" href="#">
+                <img class="social-icon" src="img/telegram.svg" alt="telegram">
+            </a>
+        </div>
+        <p class="footer__text">Вся інформація, розміщена на сайті  захищена законом про авторське право.</p>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
