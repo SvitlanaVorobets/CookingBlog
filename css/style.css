@@ -54,7 +54,9 @@ body{
 }
 
 .logo__img{
-    width: 120px;
+    width: 50%;
+    
+        
 }
 
 .header__top{
@@ -349,9 +351,9 @@ body{
         height: 100%;
         display: block;
         text-align: center;
-        padding-top: 150px;
+        padding-top: 200px;
         position: fixed;
-        top: 75px;
+        top: 200px;
         right: -100%;
         transition: 0.5s;
         margin: 0 auto;
@@ -453,4 +455,92 @@ body{
         margin: 0;
         display: block;
     }
+
+    
 }
+
+
+/*recipe*/
+.recipe__form{
+    margin-top: 50px;
+    align-items: center;
+}
+
+.recipe__img{
+    width: 50%;
+    position: relative;
+    
+}
+.recipe__ingredients__title{
+    width: 90%;
+    text-align: left;
+    font-weight: 600;
+    margin-left: 5%;    
+}
+.recipe__ingredients__text{
+    width: 90%;
+    text-align: left;
+    
+    font-size: small;
+}
+
+.recipe__title{
+    font-size: 18px;
+}
+
+/*arrow up*/
+
+#toTop {
+    width:100px;
+    position:fixed;
+    bottom:10px; 
+    right:10px;
+    cursor:pointer;
+    display:none;
+}
+
+.up__icon{
+    height: 45px;
+}
+
+#more {display: none;}
+
+#btn__more{
+    font-size: 12px;
+    line-height: 6px;
+    color: #000000;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 10px 25px;
+    border-radius: 15px;
+    white-space: nowrap;
+}
+
+#btn__more:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }

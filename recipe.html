@@ -9,16 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <link rel="icon" href="img/logo_piece of cake.png" type="image/png">
+ 
+   
 </head>
 <body>
-    
     <header class="header"> 
         <div class="container">
             <div class="header__top header__item">
                 <a class="logo" href="index.html">
-                    <img class="logo__img" src="img/logo_piece of cake.png" alt="logo_piece of cake">
+                    <img class="logo__img" src="img/logo_piece of cake.png" alt="logo_piece of cake" >
                 </a>
                 <div class="header__top-right">
                     <nav class="menu">
@@ -68,7 +70,7 @@
                         <div class="block__recipes-body">
                             <ul class="recipes-nav nav">
                                 <li class="recipes-nav-item">
-                                    <a class="recipes-nav-link" href="recipe.html">Перші страви</a>
+                                    <a class="recipes-nav-link" href="catalog.html">Перші страви</a>
                                 </li>
                                 <li class="recipes-nav-item">
                                     <a class="recipes-nav-link" href="catalog.html">Другі страви</a>
@@ -144,67 +146,97 @@
                         </div>
                     </section>
                 </div>
+
+
+
+
+
                 <div class="right__block">
                     <section class="main__content">
-                        <div class="swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <a class="swiper-link" href="#">
-                                        <img class="swiper-image" src="img/borsh.jpg" alt="borsh">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="swiper-link" href="#">
-                                        <img class="swiper-image" src="img/many.jpg" alt="many-dishes">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="swiper-link" href="#">
-                                        <img class="swiper-image" src="img/borsh.jpg" alt="borsh">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="swiper-link" href="#">
-                                        <img class="swiper-image" src="img/varenyky.jpg" alt="varenyky">
-                                    </a>
+                        <p class="title">Український борщ</p>
+                        <div class="row recipe__form mobile__none">
+                            <img class="recipe__img" src="img/borsch.jpg" alt="borsch">
+                                <div class="recipe__ingredients__title">
+                                <p>Інгредієнти:</p>
+                                <div class = "recipe__ingredients__text">
+                                    <p>буряк – 2 шт. (невеликі)</p>
+                                    <p>морква – 1 шт .</p>
+                                    <p>цибуля – 3 шт. (середні)</p>
+                                    <p>томатна паста – 2 ст. л .</p>
+                                    <p>соняшникова олія – 4-5 ст. л .</p>
+                                    <p>капуста білокачанна свіжа – 300 г</p>
+                                    <p>картопля – 4 шт. (середні)</p>
+                                    <p>сіль, лавровий лист, зелень – за смаком</p>
+                                    <p>сметана  - для подачі</p>
+                                    
                                 </div>
                             </div>
-                            <div class="swiper-pagination"></div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
                         </div>
-                        <div class="row banner__form mobile__none">
-                            <img class="banner__img" src="img/banner1.png" alt="banner1">
-                            <div class="banner__text">
-                                <p>Затірка<br>Гомбовці<br>Рокоткрумплі<br>Меживота<br>інші</p>
-                            </div>
-                        </div>
-                        <div class="banner__body">
-                            <p class="banner__title">Щось про українську кухню</p>
-                            <p class="banner__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem 
-                                egestas vitaeLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor 
-                                vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. 
-                                Sed dapibus pulvinar nibh tempor porta.</span></p>
-
-                            <button onclick="myFunction()" id="btn__more">Читати більше</button></div>
-                        <div class="row banner__form">
-                            <div class="banner__text">
-                                <p>7 кухонь світі,які потрібно<br>скушкутувати</p>
-                            </div>
-                            <img class="banner__img" src="img/banner2.png" alt="banner2">
-                        </div>
-                        <div class="banner__body">
-                            <p class="banner__title">Щось про українську кухню</p>
+                        <div class="recipe__body">
                             
+                            <p class="recipe__paragraph"><p><b>Крок 1.  Варимо бульйон </b></p> У 3-х літрову каструлю наливаємо 1,5-2 літра води. Закладаємо м’ясо (буде смачніше, якщо м’ясо на кістці) і ставимо на середній вогонь. Перед закипанням знімаємо піну, як тільки бульйон закипить, накриваємо каструлю кришкою і варимо на повільному вогні годину-півтори.</p>
+                            <p class="recipe__paragraph"><p><b>Крок 2. Робимо зажарку</b></p>  Миємо і чистимо буряк, моркву і цибуля. Буряк натираємо на крупній тертці, а моркву – на середній. Цибулю нарізаємо кубиками. На середньому вогні в сковороді розігріваємо олію, висипаємо туди цибулю і моркву, смажимо 5 хвилин. Додаємо буряк. Смажимо овочі ще 5 хвилин, додаємо томатну пасту, перемішуємо і смажимо все ще 5-7 хвилин.</p>
+                            <p class="recipe__paragraph"><p><b>Крок 3. Варимо борщ</b></p>  З бульйону виймаємо м’ясо і, поки воно остигає, кидаємо в бульйон нашатковану капусту. Через 5-10 хвилин додайте нарізану соломкою картоплю. Відокремлюємо м’ясо від кістки і нарізаємо кубиками. Повертаємо м’ясо в борщ, солимо його і додаємо зажарку. Перемішуємо борщ, кладемо лавровий лист і дрібно посічену зелень, накриваємо кришкою і варимо все ще 5-7 хвилин.
+
+                            Борщ готовий! Подаємо борщ зі сметаною і зеленню.</p>
                         
-                            <p class="banner__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem 
-                                egestas vitaeLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor 
-                                vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. 
-                                Sed dapibus pulvinar nibh tempor porta.</span></p>
-
-                            <button onclick="myFunction()" id="btn__more">Читати більше</button>
-                            
                         </div>
+                        
+
+
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <img class="swiper-image" src="img/borsh.jpg" alt="borsh">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="swiper-image" src="img/many.jpg" alt="many-dishes">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="swiper-image" src="img/varenyky.jpg" alt="varenyky">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="swiper-image" src="img/borsh.jpg" alt="borsh">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="swiper-image" src="img/many.jpg" alt="many-dishes">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="swiper-image" src="img/borsh.jpg" alt="borsh">
+                            </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+
+                          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                          <script>
+                              
+                              
+                                var swiper = new Swiper(".mySwiper", {
+                              slidesPerView: 3,
+                              spaceBetween: 30,
+                              slidesPerGroup: 3,
+                              autoplay: {
+                                delay: 5000,
+                                },
+                              loop: true,
+                              loopFillGroupWithBlank: true,
+                              pagination: {
+                                el: ".swiper-pagination",
+                                clickable: true,
+                              },
+                              navigation: {
+                                nextEl: ".swiper-button-next",
+                                prevEl: ".swiper-button-prev",
+                              },
+                            });
+                            
+                            
+                          </script>
+
+                            
                     </section>
                 </div>
             </div>
@@ -244,8 +276,10 @@
     </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+
     <div id = "toTop">
         <img class="up__icon" src="img/arrow-up.png" alt="arrow-up">
     </div>
+    
 </body>
 </html>
