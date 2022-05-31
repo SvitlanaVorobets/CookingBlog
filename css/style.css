@@ -1,83 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap');
-
 *,
 *::after,
-*::before{
+*::before {
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #E5E5E5;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
 
-.container{
+.container {
     max-width: 1220px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
     padding: 0 10px;
 }
 
-.nav .menu__list-link, .nav .recipes-nav-link{
+.nav .menu__list-link,
+.nav .recipes-nav-link {
     text-decoration: none;
     color: #000;
     font-size: 13px;
 }
 
-.nav .menu__list-link:hover, .recipes-nav-link:hover{
+.nav .menu__list-link:hover,
+.recipes-nav-link:hover {
     text-decoration: underline;
 }
 
-.nav{
+.nav {
     list-style-type: none;
     padding: 0;
 }
 
-.row{
+.row {
     display: flex;
     justify-content: space-between;
 }
 
-.title{
+.title {
     text-align: center;
     font-size: 32px;
     margin-top: 0;
 }
 
+
 /*Header*/
 
-.header{
+.header {
     border-bottom: 1px solid rgba(151, 151, 151, 0.5);
     box-shadow: 0px 1px 2px rgb(0 0 0 / 25%);
     margin-bottom: 50px;
 }
 
-.logo__img{
+.logo__img {
     width: 120px;
 }
 
-.header__top{
+.header__top {
     justify-content: space-between;
     align-items: center;
 }
 
-.header__top-right{
+.header__top-right {
     width: 50%;
 }
 
-.header__item{
+.header__item {
     display: flex;
     margin-top: 20px;
 }
 
-.mobile__menu{
+.mobile__menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.button{
+.button {
     font-size: 12px;
     line-height: 6px;
     color: #000000;
@@ -88,80 +90,86 @@ body{
     white-space: nowrap;
 }
 
-.button:hover{
+.button:hover {
     color: #fff;
     text-decoration: none;
     background-color: #000;
 }
 
-.menu__list{
+.menu__list {
     display: flex;
 }
 
-.menu__list-link{
+.menu__list-link {
     margin: 0 20px;
 }
 
-.menu__list-item:first-child .menu__list-link{
+.menu__list-item:first-child .menu__list-link {
     margin-left: 0;
 }
 
-.ham, .white-ham{  
-    display:none;  
-    padding:5px;  
-    cursor:pointer;  
-}  
-   
-.bar1,.bar2,.bar3{  
-    display:block;  
-    width:35px;  
-    height:3px;  
-    margin:5px auto;  
-    background-color:#101010;  
-    transition: 0.4s;  
+.ham,
+.white-ham {
+    display: none;
+    padding: 5px;
+    cursor: pointer;
 }
 
-.white-bar1, .white-bar2, .white-bar3{
-    display:block;  
-    width:30px;  
-    height:3px;  
-    margin:5px auto;  
-    background-color:#fff;  
+.bar1,
+.bar2,
+.bar3 {
+    display: block;
+    width: 35px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #101010;
+    transition: 0.4s;
 }
 
-.header__bottom{
+.white-bar1,
+.white-bar2,
+.white-bar3 {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #fff;
+}
+
+.header__bottom {
     justify-content: end;
     margin-bottom: 30px;
 }
 
-.search-container{
+.search-container {
     position: relative;
     width: 50%;
 }
 
-.search__icon{
+.search__icon {
     position: absolute;
     left: 6px;
     top: 10px;
     height: 15px;
 }
 
-.search__input{
+.search__input {
     padding: 10px 30px;
     width: 100%;
     border-radius: 15px;
     border: none;
 }
 
+
 /*Block of recipes*/
 
-.block__recipes{
+.block__recipes {
     background-color: #fff;
     border-radius: 15px;
     margin-bottom: 50px;
 }
 
-.block__recipes-header{
+.block__recipes-header {
     background-color: #000;
     color: #fff;
     border-radius: 15px;
@@ -170,112 +178,201 @@ body{
     font-weight: bold;
 }
 
-.block__recipes-header .white-ham{
+.block__recipes-header .white-ham {
     border: 1px solid;
     border-radius: 5px;
 }
 
-.block__recipes-title{
+.block__recipes-title {
     margin: 5px;
 }
 
-.recipes-nav{
+.recipes-nav {
     text-align: center;
 }
 
-.recipes-nav-item{
+.recipes-nav-item {
     padding: 10px 0;
 }
 
+
 /*Main content*/
 
-.swiper{
+.swiper {
     height: 300px;
 }
 
-.right__block{
+.right__block {
     width: 70%;
     margin-left: 50px;
 }
 
-.swiper-image{
+.swiper-image {
     width: 100%;
 }
 
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
     background: #fff !important;
 }
 
-.swiper-button-next, .swiper-button-prev{
+.swiper-button-next,
+.swiper-button-prev {
     color: #fff !important;
     background: rgba(0, 0, 0, 0.25);
     padding: 28px;
     border-radius: 100%;
 }
 
-.banner__form{
+.banner__form {
     margin-top: 50px;
     align-items: center;
 }
 
-.banner__img{
+.banner__img {
     width: 50%;
 }
 
-.banner__text{
+.banner__text {
     width: 50%;
     text-align: center;
     font-weight: 900;
 }
 
-.banner__title{
+.banner__title {
     font-size: 18px;
 }
 
+
+/*Contact Form*/
+
+.title-w300 {
+    font-weight: 300;
+}
+
+.contact_form input {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact_form input[type=text],
+input[type=email],
+input[type=button] {
+    border: #E5E5E5;
+    border-radius: 15px;
+    width: 400px;
+    height: 35px;
+    padding-left: 20px;
+}
+
+.fotter_contact_form {
+    margin-top: 100px;
+}
+
+.fotter_contact_form td {
+    padding-left: 30px;
+    margin-left: 0;
+}
+
+#textMessage {
+    height: 150px;
+    padding-left: 20px;
+    padding-bottom: 9%;
+}
+
+
+/* About */
+
+.about img,
+.aim_of_project img {
+    width: 300px;
+    height: 300px;
+}
+
+.about p,
+.our_team p {
+    text-align: center;
+}
+
+.about table,
+.our_team table,
+.aim_of_project table {
+    width: 70%;
+}
+
+.our_team,
+.about,
+.aim_of_project{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.about td,
+.aim_of_project td {
+    width: 300px;
+    height: 300px;
+}
+
+.avatarka {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.avatarka img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+
 /*Footer*/
 
-.footer{
+.footer {
     background-color: #F6CA63;
     text-align: center;
     padding-bottom: 10px;
     margin-top: 50px;
 }
 
-.footer .menu__list{
+.footer .menu__list {
     justify-content: center;
 }
 
-.footer__head, .footer__row-icons{
+.footer__head,
+.footer__row-icons {
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.37);
     padding: 10px;
 }
 
-.social-icon{
+.social-icon {
     height: 25px;
     padding: 0 5px;
 }
 
-.footer__icon{
+.footer__icon {
     text-decoration: none;
 }
 
-.footer__text{
+.footer__text {
     font-size: 12px;
 }
 
+
 /*Catalog*/
 
-.catalog__item{
+.catalog__item {
     position: relative;
     width: 45%;
     height: 236px;
 }
 
-.catalog__item:hover .overlay{
+.catalog__item:hover .overlay {
     height: 100%;
 }
 
-.catalog__item:hover .catalog__item-bottom{
+.catalog__item:hover .catalog__item-bottom {
     display: none;
 }
 
@@ -293,7 +390,7 @@ body{
     text-align: center;
 }
 
-.catalog__item-bottom{
+.catalog__item-bottom {
     position: absolute;
     background-color: #000;
     bottom: 0;
@@ -302,49 +399,49 @@ body{
     padding: 20px;
 }
 
-.catalog__img{
+.catalog__img {
     width: 100%;
     height: 100%;
 }
 
-.catalog__item-text{
+.catalog__item-text {
     margin: 0;
     font-size: 14px;
 }
 
-.catalog__item-title{
+.catalog__item-title {
     margin-bottom: 40px;
     font-size: 18px;
     margin-top: 100px;
 }
 
-.catalog .row{
+.catalog .row {
     margin: 50px 0;
     display: flex;
 }
 
-@media only screen and (max-width:800px){
-    .header__top-right{
+@media only screen and (max-width:800px) {
+    .header__top-right {
         width: auto;
     }
-
-    .row{
+    
+    .row {
         display: block;
     }
-
-    .mobile__menu .menu__list{
+    
+    .mobile__menu .menu__list {
         display: block;
         text-align: center;
         margin-bottom: 80px;
     }
-
-    .mobile__menu .nav .menu__list-link{
+    
+    .mobile__menu .nav .menu__list-link {
         margin: 0;
         color: #fff;
         font-size: 18px;
     }
-
-    .mobile__menu{  
+    
+    .mobile__menu {
         width: 100%;
         height: 100%;
         display: block;
@@ -357,100 +454,154 @@ body{
         margin: 0 auto;
         z-index: 10;
         background-color: #101010;
-    }  
-
-    .nav-change{  
+    }
+    
+    .nav-change {
         right: 0;
         z-index: 100;
-        transition: 0.2s ease;  
-    }  
-
-    .catalog .block__recipes-body{
+        transition: 0.2s ease;
+    }
+    
+    .catalog .block__recipes-body {
         display: none;
     }
-
-    .hidden{
+    
+    .hidden {
         overflow: hidden;
     }
-
-    .ham, .white-ham{  
-        display:block;  
-    }  
-
-    .change .bar1{  
-        transform: rotate(45deg) translate(8px,3px);  
-    }  
-
-    .change .bar2{  
-        opacity: 0;  
-    }  
-
-    .change .bar3{  
-        transform: rotate(-45deg) translate(8px,-3px);  
-    }  
-
-    .banner__text{
+    
+    .ham,
+    .white-ham {
+        display: block;
+    }
+    
+    .change .bar1 {
+        transform: rotate(45deg) translate(8px, 3px);
+    }
+    
+    .change .bar2 {
+        opacity: 0;
+    }
+    
+    .change .bar3 {
+        transform: rotate(-45deg) translate(8px, -3px);
+    }
+    
+    .banner__text {
         width: 100%;
     }
-
+    
     .right__block {
         width: auto;
         margin: 40px;
         text-align: center;
     }
-
+    
     .banner__img {
         width: 70%;
     }
-
-    .mobile__menu .menu__list-item{
+    
+    .mobile__menu .menu__list-item {
         margin: 30px;
     }
-
-    .button{
+    
+    .button {
         font-size: 16px;
     }
-
-    .mobile__none{
+    
+    .mobile__none {
         display: none;
     }
-
-    .catalog .block__recipes-header{
+    
+    .catalog .block__recipes-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-}  
+}
 
-@media only screen and (max-width:500px){
-    .search-container{
+@media only screen and (max-width:500px) {
+    .search-container {
         width: 100%;
     }
-
-    .swiper-button-next, .swiper-button-prev{
+    
+    .swiper-button-next,
+    .swiper-button-prev {
         display: none !important;
     }
-
+    
     .swiper {
         height: auto;
     }
-
-    .catalog__item{
+    
+    .catalog__item {
         width: 100%;
         height: 170px;
         margin: 50px 0;
     }
-
-    .catalog__item-bottom{
+    
+    .catalog__item-bottom {
         padding: 8px;
     }
-
-    .catalog__item-title{
+    
+    .catalog__item-title {
         margin-top: 30px;
     }
-
+    
     .catalog .row {
         margin: 0;
         display: block;
+    }
+    
+    /* About */
+    
+    .about img,
+    .aim_of_project img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .about table,
+    .our_team table,
+    .aim_of_project table {
+        width: 70%;
+    }
+    
+    .about td,
+    .aim_of_project td {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .avatarka {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    
+    /*Contact Form*/
+    
+    .contact_form input[type=text],
+    input[type=email],
+    input[type=button] {
+        border: #E5E5E5;
+        border-radius: 15px;
+        width: 300px;
+        height: 35px;
+        padding-left: 20px;
+    }
+    
+    .fotter_contact_form td {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: small;
+    }
+    
+    #textMessage {
+        height: 150px;
+        padding-left: 20px;
+        padding-bottom: 110px;
     }
 }
