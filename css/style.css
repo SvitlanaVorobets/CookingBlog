@@ -55,8 +55,7 @@ body{
 
 .logo__img{
     width: 50%;
-    
-        
+            
 }
 
 .header__top{
@@ -221,7 +220,7 @@ body{
 }
 
 .banner__img{
-    width: 50%;
+    height: auto;
 }
 
 .banner__text{
@@ -503,9 +502,11 @@ body{
     height: 45px;
 }
 
-#more {display: none;}
+#more1 {display: none;}
 
-#btn__more{
+#more2 {display: none;}
+
+#btn__more1{
     font-size: 12px;
     line-height: 6px;
     color: #000000;
@@ -516,7 +517,24 @@ body{
     white-space: nowrap;
 }
 
-#btn__more:hover{
+#btn__more1:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
+}
+
+#btn__more2{
+    font-size: 12px;
+    line-height: 6px;
+    color: #000000;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 10px 25px;
+    border-radius: 15px;
+    white-space: nowrap;
+}
+
+#btn__more2:hover{
     color: #fff;
     text-decoration: none;
     background-color: #000;
@@ -543,4 +561,11 @@ body{
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+  }
+
+
+
+  .swiper-image{
+    
+   
   }

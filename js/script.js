@@ -1,17 +1,26 @@
-const swiper = new Swiper('.swiper', {
-    loop: true,
-    cssMode: true,
-    autoplay: {
-      delay: 5000,
+
+
+
+var swiper = new Swiper(".mySwiper", {
+  
+  
+  slidesPerView: 3,
+  spaceBetween: 30,
+  slidesPerGroup: 3,
+  autoplay: {
+    delay: 5000,
     },
-    pagination: {
-      el: '.swiper-pagination',
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }
-  });
+  loop: true,
+  loopFillGroupWithBlank: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 
   
@@ -55,10 +64,11 @@ $(function() {
 });
 
 //функція для розгортання та згортання тексту
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("btn__more");
+function myFunction1() {
+  
+  var dots = document.getElementById("dots1");
+  var moreText = document.getElementById("more1");
+  var btnText = document.getElementById("btn__more1");
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
@@ -69,6 +79,27 @@ function myFunction() {
     btnText.innerHTML = "Читати менше";
     moreText.style.display = "inline";
   }
+
+  
+} 
+
+function myFunction2() {
+  
+  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("btn__more2");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Читати більше";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Читати менше";
+    moreText.style.display = "inline";
+  }
+
+  
 } 
 
  
