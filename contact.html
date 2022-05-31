@@ -54,17 +54,16 @@
     <main class="main">
         <center>
             <div class="container">
-                <center>
-                    <h1>Контакти</h1>
-                </center>
+                <div class="title">
+                        Контакти<br>
+                        Щось незрозуміло? Маєте цікаві пропозиції?
+                </div>
                 <div class="contact_form">
-                    <h3>Щось незрозуміло? Маєте цікаві пропозиції?</h3>
-
                     <form method="post" name="contact_form">
                         <p><input name="FirstName" type="text" placeholder="Ваше ім'я (обов'язково)"></p>
                         <p><input name="Email" type="email" placeholder="Ваш Email (обов'язково)"></p>
                         <p><input name="UserText" id="textMessage" type="text" placeholder="Текст повідомлення"></p>
-                        <p><input name="Button_Submit" value="Відправити" type="button" onclick="validateName()"></p>
+                        <p><input name="Button_Submit" value="Відправити" type="button" onclick="validateContactFields()"></p>
                     </form>
 
                     <div class="fotter_contact_form">

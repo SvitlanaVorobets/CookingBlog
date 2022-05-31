@@ -245,7 +245,7 @@ body {
 
 /*Contact Form*/
 
-.contact_form h3 {
+.title-w300 {
     font-weight: 300;
 }
 
@@ -296,6 +296,13 @@ input[type=button] {
 .our_team table,
 .aim_of_project table {
     width: 70%;
+}
+
+.our_team,
+.about,
+.aim_of_project{
+    margin-top: 30px;
+    margin-bottom: 60px;
 }
 
 .about td,
@@ -417,19 +424,23 @@ input[type=button] {
     .header__top-right {
         width: auto;
     }
+    
     .row {
         display: block;
     }
+    
     .mobile__menu .menu__list {
         display: block;
         text-align: center;
         margin-bottom: 80px;
     }
+    
     .mobile__menu .nav .menu__list-link {
         margin: 0;
         color: #fff;
         font-size: 18px;
     }
+    
     .mobile__menu {
         width: 100%;
         height: 100%;
@@ -444,50 +455,64 @@ input[type=button] {
         z-index: 10;
         background-color: #101010;
     }
+    
     .nav-change {
         right: 0;
         z-index: 100;
         transition: 0.2s ease;
     }
+    
     .catalog .block__recipes-body {
         display: none;
     }
+    
     .hidden {
         overflow: hidden;
     }
+    
     .ham,
     .white-ham {
         display: block;
     }
+    
     .change .bar1 {
         transform: rotate(45deg) translate(8px, 3px);
     }
+    
     .change .bar2 {
         opacity: 0;
     }
+    
     .change .bar3 {
         transform: rotate(-45deg) translate(8px, -3px);
     }
+    
     .banner__text {
         width: 100%;
     }
+    
     .right__block {
         width: auto;
         margin: 40px;
         text-align: center;
     }
+    
     .banner__img {
         width: 70%;
     }
+    
     .mobile__menu .menu__list-item {
         margin: 30px;
     }
+    
     .button {
         font-size: 16px;
     }
+    
     .mobile__none {
         display: none;
     }
+    
     .catalog .block__recipes-header {
         display: flex;
         justify-content: space-between;
@@ -499,44 +524,55 @@ input[type=button] {
     .search-container {
         width: 100%;
     }
+    
     .swiper-button-next,
     .swiper-button-prev {
         display: none !important;
     }
+    
     .swiper {
         height: auto;
     }
+    
     .catalog__item {
         width: 100%;
         height: 170px;
         margin: 50px 0;
     }
+    
     .catalog__item-bottom {
         padding: 8px;
     }
+    
     .catalog__item-title {
         margin-top: 30px;
     }
+    
     .catalog .row {
         margin: 0;
         display: block;
     }
+    
     /* About */
+    
     .about img,
     .aim_of_project img {
         width: 150px;
         height: 150px;
     }
+    
     .about table,
     .our_team table,
     .aim_of_project table {
         width: 70%;
     }
+    
     .about td,
     .aim_of_project td {
         width: 150px;
         height: 150px;
     }
+    
     .avatarka {
         width: 100px;
         height: 100px;
@@ -544,7 +580,9 @@ input[type=button] {
         overflow: hidden;
         border-radius: 50%;
     }
+    
     /*Contact Form*/
+    
     .contact_form input[type=text],
     input[type=email],
     input[type=button] {
@@ -554,11 +592,13 @@ input[type=button] {
         height: 35px;
         padding-left: 20px;
     }
+    
     .fotter_contact_form td {
         padding-left: 20px;
         padding-right: 20px;
         font-size: small;
     }
+    
     #textMessage {
         height: 150px;
         padding-left: 20px;

@@ -35,15 +35,35 @@ whiteHamburger.addEventListener('click', () => {
     }
 });
 
-function validateName() {
+function validateContactFields() {
+    // Checking first name field
     if (document.contact_form.FirstName.value == "") {
         alert("Введіть ім'я");
         document.contact_form.FirstName.focus();
         return false;
     }
+
+    // Cheking if in first name field only letters
     if (!/^[a-zA-Z]*$/g.test(document.contact_form.FirstName.value)) {
         alert("В ім'я введіть тільки букви.");
         document.contact_form.FirstName.focus();
+        return false;
+    }
+
+    // Checking email field
+    if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(contact_form.Email.value)))
+    {
+        alert("Введіть корректну email адресу!")
+        return false;
+    }
+
+    // Checking if text message field have more then 3 and less then 50 symbols
+    var amountOfSymbols = document.getElementById('textMessage').value;
+    if (amountOfSymbols < 3) {
+        alert("В полі \"Текст повідомлення\" введіть що найменше три символи.");
+        return false;
+    } else if (amountOfSymbols > 50){
+        alert("В полі \"Текст повідомлення\" не може бути більше 50 символів.");
         return false;
     }
 }
