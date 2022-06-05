@@ -70,7 +70,7 @@ body {
 
 .header__item {
     display: flex;
-    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .mobile__menu {
@@ -138,7 +138,7 @@ body {
 
 .header__bottom {
     justify-content: end;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .search-container {
@@ -336,6 +336,10 @@ input[type=button] {
     margin-top: 50px;
 }
 
+.footer .menu__list-item:first-child .menu__list-link{
+    margin-left: 20px;
+}
+
 .footer .menu__list {
     justify-content: center;
 }
@@ -446,9 +450,9 @@ input[type=button] {
         height: 100%;
         display: block;
         text-align: center;
-        padding-top: 200px;
+        padding-top: 150px;
         position: fixed;
-        top: 200px;
+        top: 150px;
         right: -100%;
         transition: 0.5s;
         margin: 0 auto;
@@ -463,6 +467,10 @@ input[type=button] {
     }
     
     .catalog .block__recipes-body {
+        display: none;
+    }
+    
+    .up__icon{
         display: none;
     }
     
@@ -513,10 +521,20 @@ input[type=button] {
         display: none;
     }
     
+    .recipe__img{
+        width: 100% !important;
+    }
+
     .catalog .block__recipes-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .recipe__ingredients__title, .recipe__ingredients__text{
+        text-align: center !important;
+        width: 100% !important;
+        margin-left: auto !important; 
     }
 }
 
@@ -710,4 +728,3 @@ input[type=button] {
         padding-left: 20px;
         padding-bottom: 110px;
     }
-}

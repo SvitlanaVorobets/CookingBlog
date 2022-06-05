@@ -1,8 +1,5 @@
 var swiper = new Swiper(".mySwiper", {
-  
-  slidesPerView: 3,
   spaceBetween: 30,
-  slidesPerGroup: 3,
   autoplay: {
     delay: 5000,
     },
@@ -16,11 +13,22 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    }
+  }
 });
 
-
-  
-  
 const hamburger = document.querySelector(".ham");  
 const navsub = document.querySelector(".mobile__menu"); 
 const body = document.querySelector("body");
@@ -34,14 +42,17 @@ hamburger.addEventListener('click', () => {
 const whiteHamburger = document.querySelector(".white-ham");
 const recipes = document.querySelector(".catalog .block__recipes-body");
 
-whiteHamburger.addEventListener('click', () => {  
-  whiteHamburger.classList.toggle("change")  
-  if (recipes.style.display === "block") {
-    recipes.style.display = "none";
-  } else {
-    recipes.style.display = "block";
-  } 
-});  
+
+if(whiteHamburger){
+  whiteHamburger.addEventListener('click', () => {  
+    whiteHamburger.classList.toggle("change")  
+    if (recipes.style.display === "block") {
+      recipes.style.display = "none";
+    } else {
+      recipes.style.display = "block";
+    } 
+  });  
+}
 
 //функція для роботи стрілки вверх
 $(function() {
@@ -97,15 +108,6 @@ function myFunction2() {
 
   
 } 
-
-whiteHamburger.addEventListener('click', () => {
-    whiteHamburger.classList.toggle("change")
-    if (recipes.style.display === "block") {
-        recipes.style.display = "none";
-    } else {
-        recipes.style.display = "block";
-    }
-});
 
 function validateContactFields() {
     // Checking first name field
